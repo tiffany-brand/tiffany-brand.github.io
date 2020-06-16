@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(229, 230, 223);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+header h1 {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: rgb(49, 45, 45);
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.img-bio {
+  display: grid;
+  grid-template-columns: 200px 400px;
+  align-items: start;
+}
+
+section {
+  margin: 10px;
+}
+
+div.img-bio img {
+  float: left;
+  margin-right: 20px;
+  width: 200px;
+}
+
+div.img-bio p {
+  margin: 0 0 0 20px;
+}
+
+li {
+  padding: 5px;
+}
