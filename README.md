@@ -1,3 +1,19 @@
-# tiffany-brand.github.io
+# Responsive Portfolio using Bootstrap
 
-Bio page coming soon.
+## Description
+
+This site showcases the web development projects I've created. 
+
+
+
+## Deployed site
+
+View my portfolio at: https://tiffany-brand.github.io/developer-portfolio/
+
+
+## Screenshots
+
+
+
+
+

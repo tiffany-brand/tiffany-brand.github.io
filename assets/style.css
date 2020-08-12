@@ -1,0 +1,78 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display+SC&family=Raleway:wght@300;400&display=swap');
+
+/* body background color and gradient */
+body {
+	background: rgb(238, 174, 202);
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(227, 191, 236, 1) 100%);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+div.jumbotron {
+	margin-top: 100px;
+	height: 300px;
+	background-image: url('images/look-out.jpg');
+	background-size: cover;
+	/* opacity: 0.8; */
+}
+
+div.hero-text p {
+	font-weight: bold;
+}
+
+div.hero-text h1 {
+	font-family: Raleway, sans-serif;
+}
+
+/* navbar */
+nav.navbg {
+	border-bottom: 2px solid rgb(151, 82, 151);
+	background-color: rgb(221, 160, 221);
+}
+
+nav a.navbar-brand {
+	font-family: Poppins, sans-serif;
+	background-color: rgb(151, 82, 151);
+}
+
+/* social media icons */
+a i {
+	font-size: 4rem;
+	color: rgb(151, 82, 151);
+}
+
+a i:hover {
+    opacity: 0.7;
+}
+
+/* container color */
+div.about-me,
+div.portfolio,
+div.contact {
+	background-color: rgb(252, 244, 251);
+	font-family: Raleway, sans-serif;
+}
+
+/* name overlay for portfolio items */
+
+h5.card-title,
+span.tools {
+	color: rgb(151, 82, 151);
+	font-weight: bold;
+}
+
+div.portfolio-item h2 {
+	position: relative;
+	top: 75%;
+	margin-top: -25px;
+	background-color: rgba(247, 171, 234, 0.8);
+}
+
+/* footer */
+footer.footer {
+	background-color: rgb(221, 160, 221);
+}

@@ -1,47 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Tiffany Brand</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Portfolio Styles -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/fdf8c977f5.js" crossorigin="anonymous"></script>
+
+    <title>Tiffany L. Brand</title>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
     <header>
-        <h1>Tiffany Brand</h1>
+        <!-- Begin Navigation -->
+        <nav class="navbar fixed-top py-0  navbar-expand-sm navbar-light navbg shadow-sm">
+            <a class="navbar-brand text-light p-3 ml-4" href="./index.html">Tiffany L. Brand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+        <!-- End Navigation -->
     </header>
 
-    <div>
-        <!-- First Section - Bio -->
-        <section class="bio">
-            <h2>Tiffany Brand</h2>
-            <div class="img-bio">
-                <img src="./assets/tbrand.jpg" alt="Tiffany Brand" />
-                <p class="bio-paragraph">
-                    Bio will be here soon.
-                </p>
-
+    <div class="container-fluid p-0">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container hero-text">
+                <h1 class="display-4">Tiffany Brand</h1>
+                <p class="lead">Full Stack Web Developer</p>
             </div>
-
-        </section>
-        <!-- Second Section - Contact information -->
-        <section class="contact">
-            <h2>Contact Info</h2>
-            <ul>
-                <li>
-                    <strong>Email: </strong>
-                    <a href="mailto:brand2learn@gmail.com">brand2learn@gmail.com</a>
-                </li>
-                <li>
-                    <strong>Github: </strong>
-                    <a href="https://github.com/tiffany-brand">github.com/tiffany-brand</a>
-                </li>
-                <li><strong>Portfolio: </strong><a href="">Coming Soon</a></li>
-            </ul>
-        </section>
+        </div>
     </div>
 
+
+    <main class="flex-shrink-0">
+
+
+        <!--  About Me -->
+        <section id="about" class="pt-5">
+            <div class="container rounded shadow-lg about-me p-4 mt-5">
+                <h1 class="mt-2">About Me</h1>
+                <hr />
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./assets/images/tbrand-sq.jpg" class=" mr-4 mb-2 py-2 px-2 img-thumbnail float-left"
+                            alt="headshot">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Full stack web developer with technology management experience, excited to build software to
+                            meet the needs of users with all levels of technical expertise. Having spent my career
+                            managing technology in the education sector, I enjoy finding software and hardware solutions
+                            to solve problems in times of small budgets and big dreams! My colleagues and students have
+                            appreciated my ability to break down a technical skill into pieces they can understand
+                            raising the caliber of work delivered. In my current studies in the University of New
+                            Hampshire’s certificate program in full stack web development, I am continuing to build my
+                            skills in HTML & CSS, JavaScript, Node.js, React.js, and responsive web design and I
+                            thoroughly enjoy collaborating with my teams to bring our software visions to life.</p>
+                    </div>
+                </div>
+                <!-- Social Media Icons -->
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center">Find me at:</h2>
+                    </div>
+                    <div class="offset-md-4 col-md-2 col-sm-6 col-6 text-center">
+                        <a href="https://github.com/tiffany-brand" title="GitHub"><i
+                                class="fab fa-github-square"></i></a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-6 text-center">
+                        <a href="https://www.linkedin.com/in/tiffanybrand/" title="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portfolio" class="pt-5">
+            <div class="container-sm rounded shadow-lg portfolio p-4 mt-4">
+                <h1 class="mt-2">Portfolio</h1>
+                <hr />
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/high-card.jpg" class="card-img-top" alt="High Card Picks Dinner">
+                            <div class="card-body">
+                                <h5 class="card-title">High Card Picks Dinner</h5>
+                                <p class="card-text">Relationship saver app! Help couples, friends, roommates fairly
+                                    choose who picks dinner and find quality dinner choices.</p>
+                                <p class="card-text"><span class="tools">Tools Used:</span> HTML, CSS, JavaScript,
+                                    JQuery, Materialize, Card and Recipe APIs, AnimateCSS, MomentJS, ChartJS</p>
+                                <a href="https://tiffany-brand.github.io/high-card-picks-dinner/"
+                                    class="btn btn-light">Site</a>
+                                <a href="https://github.com/tiffany-brand/high-card-picks-dinner"
+                                    class="btn btn-light">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/workday-scheduler.jpg" class="card-img-top"
+                                alt="Work Day Scheduler">
+                            <div class="card-body">
+                                <h5 class="card-title">Work Day Scheduler</h5>
+                                <p class="card-text">A calendar application that allows a user to plan hourly time
+                                    blocks in a day. The application displays each hourly block from 9 am to 5 pm and
+                                    users can save events in each time block. Hourly blocks are color coded: Gray blocks
+                                    are in the past, red is the present hour, and green blocks are future hours. A clear
+                                    button allows the user to clear all calendar events from the day.</p>
+                                <p class="card-text"><span class="tools">Tools Used:</span> HTML, CSS, JavaScript,
+                                    MomentJS</p>
+                                <a href="https://tiffany-brand.github.io/work-day-timeblock-planner/"
+                                    class="btn btn-light">Site</a>
+                                <a href="https://github.com/tiffany-brand/work-day-timeblock-planner"
+                                    class="btn btn-light">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/weather-dash.jpg" class="card-img-top" alt="Weather Dashboard">
+                            <div class="card-body">
+                                <h5 class="card-title">Weather Dashboard</h5>
+                                <p class="card-text">This weather dashboard project allows the user to search for cities
+                                    and view current weather conditions and a 5 day forecast with data from the
+                                    OpenWeather API.</p>
+                                <p class="card-text"><span class="tools">Tools Used:</span> HTML, CSS, JavaScript,
+                                    Bootstrap, OpenWeather API,
+                                    MomentJS</p>
+                                <a href="https://tiffany-brand.github.io/weather-conditions-dashboard/"
+                                    class="btn btn-light">Site</a>
+                                <a href="https://github.com/tiffany-brand/weather-conditions-dashboard"
+                                    class="btn btn-light">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/quiz.jpg" class="card-img-top" alt="Code Quiz">
+                            <div class="card-body">
+                                <h5 class="card-title">Code Quiz</h5>
+                                <p class="card-text">This project is a timed JavaScript code quiz with a high score
+                                    hall of fame.</p>
+                                <p class="card-text"><span class="tools">Tools Used:</span> HTML, CSS, JavaScript</p>
+                                <a href="https://tiffany-brand.github.io/timed-javascript-code-quiz/"
+                                    class="btn btn-light">Site</a>
+                                <a href="https://github.com/tiffany-brand/timed-javascript-code-quiz"
+                                    class="btn btn-light">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/pass-gen.jpg" class="card-img-top" alt="Password Generator">
+                            <div class="card-body">
+                                <h5 class="card-title">Password Generator</h5>
+                                <p class="card-text">This project is a password generator which creates secure passwords
+                                    based on criteria. Users can choose the types
+                                    of characters to include in the password as well as the length of the password by
+                                    filling in the presented form. </p>
+                                <p class="card-text"><span class="tools">Tools Used:</span> HTML, CSS, JavaScript</p>
+                                <a href="https://tiffany-brand.github.io/secure-password-generator/"
+                                    class="btn btn-light">Site</a>
+                                <a href="https://github.com/tiffany-brand/secure-password-generator"
+                                    class="btn btn-light">Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- End Main -->
+
+    <!-- Begin Footer -->
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-muted"><small>Copyright 2020 Tiffany L. Brand</small></span>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
