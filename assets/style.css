@@ -60,7 +60,8 @@ div.contact {
 /* name overlay for portfolio items */
 
 h5.card-title,
-span.tools {
+span.tools,
+h3 {
 	color: rgb(151, 82, 151);
 	font-weight: bold;
 }

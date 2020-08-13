@@ -19,7 +19,7 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-    <header>
+    <header id="top">
         <!-- Begin Navigation -->
         <nav class="navbar fixed-top py-0  navbar-expand-sm navbar-light navbg shadow-sm">
             <a class="navbar-brand text-light p-3 ml-4" href="./index.html">Tiffany L. Brand</a>
@@ -33,10 +33,11 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
-
-
                 </ul>
             </div>
         </nav>
@@ -95,10 +96,26 @@
             </div>
         </section>
 
+        <!--  Skills  -->
+        <section id="skills" class="pt-5">
+            <div class="container rounded shadow-lg about-me p-4 mt-5">
+                <h2 class="mt-2">Skills</h2>
+                <hr />
+                <div class="row">
+                    <div class="col-12 ">
+                        <h3 class="text-center">Front End</h3>
+                        <p class="text-center">HTML | CSS | Bootstrap | Materialize | JavaScript</p>
+                        <h3 class="text-center">Back End</h3>
+                        <p class="text-center">Node JS | Express JS | Mongo DB | React JS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section id="portfolio" class="pt-5">
             <div class="container-sm rounded shadow-lg portfolio p-4 mt-4">
-                <h1 class="mt-2">Portfolio</h1>
+                <h2 class="mt-2">Portfolio</h2>
                 <hr />
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
@@ -187,6 +204,7 @@
                     </div>
 
                 </div>
+                <p class="top-arrow text-right"><a href="#top"><i class="fas fa-angle-up"></i></a></i></p>
             </div>
         </section>
 
