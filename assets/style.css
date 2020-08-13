@@ -40,7 +40,8 @@ nav a.navbar-brand {
 }
 
 /* social media icons */
-a i {
+a i,
+span i {
 	font-size: 4rem;
 	color: rgb(151, 82, 151);
 }
