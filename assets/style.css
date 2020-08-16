@@ -39,6 +39,12 @@ nav a.navbar-brand {
 	background-color: rgb(151, 82, 151);
 }
 
+/* Contact Me */
+
+p.contact {
+	margin-bottom: 0px;
+}
+
 /* social media icons */
 a i,
 span i {
