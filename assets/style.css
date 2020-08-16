@@ -64,7 +64,7 @@ div.contact {
 	font-family: Raleway, sans-serif;
 }
 
-/* name overlay for portfolio items */
+/* portfolio items */
 
 h5.card-title,
 span.portfolio-heading,
@@ -73,12 +73,6 @@ h3 {
 	font-weight: bold;
 }
 
-div.portfolio-item h2 {
-	position: relative;
-	top: 75%;
-	margin-top: -25px;
-	background-color: rgba(247, 171, 234, 0.8);
-}
 
 /* footer */
 footer.footer {
