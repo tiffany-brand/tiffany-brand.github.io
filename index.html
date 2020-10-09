@@ -15,13 +15,16 @@
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/fdf8c977f5.js" crossorigin="anonymous"></script>
 
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>Tiffany L. Brand</title>
 </head>
 
 <body class="d-flex flex-column h-100">
     <header id="top">
         <!-- Begin Navigation -->
-        <nav class="navbar fixed-top py-0  navbar-expand-sm navbar-light navbg shadow-sm">
+        <nav class="navbar fixed-top py-0  navbar-expand-sm navbar-light navbg shadow-sm load-hidden">
             <a class="navbar-brand text-light p-3 ml-4" href="./index.html">Tiffany L. Brand</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,23 +67,31 @@
                 <hr />
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="./assets/images/tbrand-sq.jpg" class=" mr-4 mb-2 py-2 px-2 img-thumbnail float-left"
-                            alt="headshot">
+                        <div class="about-left load-hidden">
+                            <img src="./assets/images/tbrand-sq.jpg"
+                                class=" mr-4 mb-2 py-2 px-2 img-thumbnail float-left" alt="headshot">
+                        </div>
                     </div>
                     <div class="col-md-8">
-                        <p>Full stack web developer with a background in educational technology management, committed to
-                            team collaboration and continuous learning in responsive web design. Known as a creative
-                            problem solver, I am persistent in finding solutions and am seeking new challenges in front
-                            and back end development.</p>
+                        <div class="about-right load-hidden">
+                            <p>Full stack web developer with a background in educational technology management,
+                                committed to
+                                team collaboration and continuous learning in responsive web design. Known as a creative
+                                problem solver, I am persistent in finding solutions and am seeking new challenges in
+                                front
+                                and back end development.</p>
 
-                        <p>In my current studies in the University of New Hampshire’s certificate program in full stack
-                            web development, I am continuing to build my
-                            skills in HTML & CSS, JavaScript, Node.js, MySQL, MongoDB, React.js, and responsive web
-                            design. I
-                            thoroughly enjoy collaborating with my teams to bring our software visions to life.</p>
+                            <p>In my current studies in the University of New Hampshire’s certificate program in full
+                                stack
+                                web development, I am continuing to build my
+                                skills in HTML & CSS, JavaScript, Node.js, MySQL, MongoDB, React.js, and responsive web
+                                design. I
+                                thoroughly enjoy collaborating with my teams to bring our software visions to life.</p>
 
-                        <p>When I'm not coding, you'll find me hiking New Hampshire's beautiful trails, taking in some
-                            musical theater, or tap dancing!</p>
+                            <p>When I'm not coding, you'll find me hiking New Hampshire's beautiful trails, taking in
+                                some
+                                musical theater, or tap dancing!</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Social Media Icons -->
@@ -109,11 +120,11 @@
 
         <!--  Skills  -->
         <section id="skills" class="pt-5">
-            <div class="container rounded shadow-lg about-me p-4 mt-5">
+            <div class="container rounded shadow-lg my-skills p-4 mt-5">
                 <h2 class="mt-2">Skills</h2>
                 <hr />
                 <div class="row">
-                    <div class="col-12 ">
+                    <div class="col-12 skill-reveal load-hidden">
                         <h3 class="text-center">Front End</h3>
                         <p class="text-center">HTML | CSS | Bootstrap | Materialize | JavaScript</p>
                         <h3 class="text-center">Back End</h3>
@@ -131,164 +142,178 @@
             <div class="container-sm rounded shadow-lg portfolio p-4 mt-4">
                 <h2 class="mt-2">Portfolio</h2>
                 <hr />
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
-                        <div class="card h-100">
-                            <img src="./assets/images/team-builder.jpg" class="card-img-top" alt="Team Builder">
-                            <div class="card-body">
-                                <h5 class="card-title">Team Builder</h5>
-                                <p class="card-text">This application aims to help build teams, foster creativity, and
-                                    strengthen culture in a remote workforce. It provides a fun way to break the ice in
-                                    remote meetings and help team members bond. Group project.</p>
-                                <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
-                                    JavaScript,
-                                    JQuery, Bootstrap, Axios, Express, Handlebars, Auth0, Passport, MySQL, Sequelize,
-                                    and
-                                    FileStack</p>
-                                <p class="card-text"><span class="portfolio-heading">Group Roles:</span> For this
-                                    project I served
-                                    on the Back-End Team, tasked with authentication, api structure, image handling, and
-                                    database calls.</p>
-                                <a href="https://the-team-builder.herokuapp.com/" class="btn btn-light"
-                                    target="_blank">Site</a>
-                                <a href="https://github.com/hilbug/the-team-builders" class="btn btn-light"
-                                    target="_blank">Code</a>
+                <div class="portfolio-reveal load-hidden">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                            <div class="card h-100">
+                                <img src="./assets/images/team-builder.jpg" class="card-img-top" alt="Team Builder">
+                                <div class="card-body">
+                                    <h5 class="card-title">Team Builder</h5>
+                                    <p class="card-text">This application aims to help build teams, foster creativity,
+                                        and
+                                        strengthen culture in a remote workforce. It provides a fun way to break the ice
+                                        in
+                                        remote meetings and help team members bond. Group project.</p>
+                                    <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
+                                        JavaScript,
+                                        JQuery, Bootstrap, Axios, Express, Handlebars, Auth0, Passport, MySQL,
+                                        Sequelize,
+                                        and
+                                        FileStack</p>
+                                    <p class="card-text"><span class="portfolio-heading">Group Roles:</span> For this
+                                        project I served
+                                        on the Back-End Team, tasked with authentication, api structure, image handling,
+                                        and
+                                        database calls.</p>
+                                    <a href="https://the-team-builder.herokuapp.com/" class="btn btn-light"
+                                        target="_blank">Site</a>
+                                    <a href="https://github.com/hilbug/the-team-builders" class="btn btn-light"
+                                        target="_blank">Code</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
-                        <div class="card h-100">
-                            <img src="./assets/images/high-card.jpg" class="card-img-top" alt="High Card Picks Dinner">
-                            <div class="card-body">
-                                <h5 class="card-title">High Card Picks Dinner</h5>
-                                <p class="card-text">Relationship saver app! Help couples, friends, roommates fairly
-                                    choose who picks dinner and find quality dinner choices. Group project.</p>
-                                <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
-                                    JavaScript,
-                                    JQuery, Materialize, Card and Recipe APIs, AnimateCSS, MomentJS, ChartJS</p>
-                                <p class="card-text"><span class="portfolio-heading">Group Roles:</span> For this
-                                    project I served
-                                    as Project Manager and
-                                    Front-End Designer</p>
-                                <a href="https://tiffany-brand.github.io/high-card-picks-dinner/" class="btn btn-light"
-                                    target="_blank">Site</a>
-                                <a href="https://github.com/tiffany-brand/high-card-picks-dinner" class="btn btn-light"
-                                    target="_blank">Code</a>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                            <div class="card h-100">
+                                <img src="./assets/images/high-card.jpg" class="card-img-top"
+                                    alt="High Card Picks Dinner">
+                                <div class="card-body">
+                                    <h5 class="card-title">High Card Picks Dinner</h5>
+                                    <p class="card-text">Relationship saver app! Help couples, friends, roommates fairly
+                                        choose who picks dinner and find quality dinner choices. Group project.</p>
+                                    <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
+                                        JavaScript,
+                                        JQuery, Materialize, Card and Recipe APIs, AnimateCSS, MomentJS, ChartJS</p>
+                                    <p class="card-text"><span class="portfolio-heading">Group Roles:</span> For this
+                                        project I served
+                                        as Project Manager and
+                                        Front-End Designer</p>
+                                    <a href="https://tiffany-brand.github.io/high-card-picks-dinner/"
+                                        class="btn btn-light" target="_blank">Site</a>
+                                    <a href="https://github.com/tiffany-brand/high-card-picks-dinner"
+                                        class="btn btn-light" target="_blank">Code</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
-                        <div class="card h-100">
-                            <img src="./assets/images/gourmet-burger.jpg" class="card-img-top"
-                                alt="Gourmet Burger Logger">
-                            <div class="card-body">
-                                <h5 class="card-title">Gourmet Burger Logger</h5>
-                                <p class="card-text">The Gourmet Burger Logger is an application built in the MVC
-                                    pattern to track crafted and devoured burgers.
-                                    Users enter a burger description to add a burger to the crafted list. Clicking the
-                                    Devour button marks the burger as eaten, and
-                                    burgers can also be deleted.
-                                </p>
-                                <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
-                                    JavaScript, Node.js, Express, Handlebars, MySQL</p>
-                                <a href="https://enigmatic-ravine-90918.herokuapp.com/" class="btn btn-light"
-                                    target="_blank">Site</a>
-                                <a href="https://github.com/tiffany-brand/gourmet-burger-logger" class="btn btn-light"
-                                    target="_blank">Code</a>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                            <div class="card h-100">
+                                <img src="./assets/images/gourmet-burger.jpg" class="card-img-top"
+                                    alt="Gourmet Burger Logger">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gourmet Burger Logger</h5>
+                                    <p class="card-text">The Gourmet Burger Logger is an application built in the MVC
+                                        pattern to track crafted and devoured burgers.
+                                        Users enter a burger description to add a burger to the crafted list. Clicking
+                                        the
+                                        Devour button marks the burger as eaten, and
+                                        burgers can also be deleted.
+                                    </p>
+                                    <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
+                                        JavaScript, Node.js, Express, Handlebars, MySQL</p>
+                                    <a href="https://enigmatic-ravine-90918.herokuapp.com/" class="btn btn-light"
+                                        target="_blank">Site</a>
+                                    <a href="https://github.com/tiffany-brand/gourmet-burger-logger"
+                                        class="btn btn-light" target="_blank">Code</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
-                        <div class="card h-100">
-                            <img src="./assets/images/employee-mgmnt.jpg" class="card-img-top"
-                                alt="Employee Management System">
-                            <div class="card-body">
-                                <h5 class="card-title">Employee Management System</h5>
-                                <p class="card-text">The Employee Management System is a command line application to
-                                    view and manage company employees. The application accesses employee data in a MySQL
-                                    database which stores employees, departments, and roles.</p>
-                                <p class="card-text"><span class="portfolio-heading">Tools Used:</span> Node.js,
-                                    Inquirer, MySQL</p>
-                                <a href="https://youtu.be/szqkZ_KQiA4" class="btn btn-light" target="_blank">Demo
-                                    Video</a>
-                                <a href="https://github.com/tiffany-brand/employee-management-system"
-                                    class="btn btn-light" target="_blank">Code</a>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                            <div class="card h-100">
+                                <img src="./assets/images/employee-mgmnt.jpg" class="card-img-top"
+                                    alt="Employee Management System">
+                                <div class="card-body">
+                                    <h5 class="card-title">Employee Management System</h5>
+                                    <p class="card-text">The Employee Management System is a command line application to
+                                        view and manage company employees. The application accesses employee data in a
+                                        MySQL
+                                        database which stores employees, departments, and roles.</p>
+                                    <p class="card-text"><span class="portfolio-heading">Tools Used:</span> Node.js,
+                                        Inquirer, MySQL</p>
+                                    <a href="https://youtu.be/szqkZ_KQiA4" class="btn btn-light" target="_blank">Demo
+                                        Video</a>
+                                    <a href="https://github.com/tiffany-brand/employee-management-system"
+                                        class="btn btn-light" target="_blank">Code</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
-                        <div class="card h-100">
-                            <img src="./assets/images/workday-scheduler.jpg" class="card-img-top"
-                                alt="Work Day Scheduler">
-                            <div class="card-body">
-                                <h5 class="card-title">Work Day Scheduler</h5>
-                                <p class="card-text">A calendar application that allows a user to plan hourly time
-                                    blocks in a day. The application displays each hourly block from 9 am to 5 pm and
-                                    users can save events in each time block.</p>
-                                <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
-                                    JavaScript,
-                                    MomentJS</p>
-                                <a href="https://tiffany-brand.github.io/work-day-timeblock-planner/"
-                                    class="btn btn-light" target="_blank">Site</a>
-                                <a href="https://github.com/tiffany-brand/work-day-timeblock-planner"
-                                    class="btn btn-light" target="_blank">Code</a>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                            <div class="card h-100">
+                                <img src="./assets/images/workday-scheduler.jpg" class="card-img-top"
+                                    alt="Work Day Scheduler">
+                                <div class="card-body">
+                                    <h5 class="card-title">Work Day Scheduler</h5>
+                                    <p class="card-text">A calendar application that allows a user to plan hourly time
+                                        blocks in a day. The application displays each hourly block from 9 am to 5 pm
+                                        and
+                                        users can save events in each time block.</p>
+                                    <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
+                                        JavaScript,
+                                        MomentJS</p>
+                                    <a href="https://tiffany-brand.github.io/work-day-timeblock-planner/"
+                                        class="btn btn-light" target="_blank">Site</a>
+                                    <a href="https://github.com/tiffany-brand/work-day-timeblock-planner"
+                                        class="btn btn-light" target="_blank">Code</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
-                        <div class="card h-100">
-                            <img src="./assets/images/weather-dash.jpg" class="card-img-top" alt="Weather Dashboard">
-                            <div class="card-body">
-                                <h5 class="card-title">Weather Dashboard</h5>
-                                <p class="card-text">This weather dashboard project allows the user to search for cities
-                                    and view current weather conditions and a 5 day forecast with data from the
-                                    OpenWeather API.</p>
-                                <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
-                                    JavaScript,
-                                    Bootstrap, OpenWeather API,
-                                    MomentJS</p>
-                                <a href="https://tiffany-brand.github.io/weather-conditions-dashboard/"
-                                    class="btn btn-light" target="_blank">Site</a>
-                                <a href="https://github.com/tiffany-brand/weather-conditions-dashboard"
-                                    class="btn btn-light" target="_blank">Code</a>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                            <div class="card h-100">
+                                <img src="./assets/images/weather-dash.jpg" class="card-img-top"
+                                    alt="Weather Dashboard">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weather Dashboard</h5>
+                                    <p class="card-text">This weather dashboard project allows the user to search for
+                                        cities
+                                        and view current weather conditions and a 5 day forecast with data from the
+                                        OpenWeather API.</p>
+                                    <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
+                                        JavaScript,
+                                        Bootstrap, OpenWeather API,
+                                        MomentJS</p>
+                                    <a href="https://tiffany-brand.github.io/weather-conditions-dashboard/"
+                                        class="btn btn-light" target="_blank">Site</a>
+                                    <a href="https://github.com/tiffany-brand/weather-conditions-dashboard"
+                                        class="btn btn-light" target="_blank">Code</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
-                        <div class="card h-100">
-                            <img src="./assets/images/quiz.jpg" class="card-img-top" alt="Code Quiz">
-                            <div class="card-body">
-                                <h5 class="card-title">Code Quiz</h5>
-                                <p class="card-text">This project is a timed JavaScript code quiz with a high score
-                                    hall of fame.</p>
-                                <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
-                                    JavaScript</p>
-                                <a href="https://tiffany-brand.github.io/timed-javascript-code-quiz/"
-                                    class="btn btn-light" target="_blank">Site</a>
-                                <a href="https://github.com/tiffany-brand/timed-javascript-code-quiz"
-                                    class="btn btn-light" target="_blank">Code</a>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                            <div class="card h-100">
+                                <img src="./assets/images/quiz.jpg" class="card-img-top" alt="Code Quiz">
+                                <div class="card-body">
+                                    <h5 class="card-title">Code Quiz</h5>
+                                    <p class="card-text">This project is a timed JavaScript code quiz with a high score
+                                        hall of fame.</p>
+                                    <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
+                                        JavaScript</p>
+                                    <a href="https://tiffany-brand.github.io/timed-javascript-code-quiz/"
+                                        class="btn btn-light" target="_blank">Site</a>
+                                    <a href="https://github.com/tiffany-brand/timed-javascript-code-quiz"
+                                        class="btn btn-light" target="_blank">Code</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
-                        <div class="card h-100">
-                            <img src="./assets/images/pass-gen.jpg" class="card-img-top" alt="Password Generator">
-                            <div class="card-body">
-                                <h5 class="card-title">Password Generator</h5>
-                                <p class="card-text">This project is a password generator which creates secure passwords
-                                    based on criteria. Users can choose the types
-                                    of characters to include in the password as well as the length of the password by
-                                    filling in the presented form. </p>
-                                <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
-                                    JavaScript</p>
-                                <a href="https://tiffany-brand.github.io/secure-password-generator/"
-                                    class="btn btn-light" target="_blank">Site</a>
-                                <a href="https://github.com/tiffany-brand/secure-password-generator"
-                                    class="btn btn-light" target="_blank">Code</a>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item mt-2">
+                            <div class="card h-100">
+                                <img src="./assets/images/pass-gen.jpg" class="card-img-top" alt="Password Generator">
+                                <div class="card-body">
+                                    <h5 class="card-title">Password Generator</h5>
+                                    <p class="card-text">This project is a password generator which creates secure
+                                        passwords
+                                        based on criteria. Users can choose the types
+                                        of characters to include in the password as well as the length of the password
+                                        by
+                                        filling in the presented form. </p>
+                                    <p class="card-text"><span class="portfolio-heading">Tools Used:</span> HTML, CSS,
+                                        JavaScript</p>
+                                    <a href="https://tiffany-brand.github.io/secure-password-generator/"
+                                        class="btn btn-light" target="_blank">Site</a>
+                                    <a href="https://github.com/tiffany-brand/secure-password-generator"
+                                        class="btn btn-light" target="_blank">Code</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
                 <p class="top-arrow text-right"><a href="#top"><i class="fas fa-angle-up"></i></a></i></p>
             </div>
@@ -317,6 +342,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>

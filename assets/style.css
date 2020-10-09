@@ -12,6 +12,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 div.jumbotron {
 	margin-top: 100px;
 	height: 300px;
@@ -39,6 +43,7 @@ nav a.navbar-brand {
 	background-color: rgb(151, 82, 151);
 }
 
+
 /* Contact Me */
 
 p.contact {
@@ -58,10 +63,16 @@ a i:hover {
 
 /* container color */
 div.about-me,
+div.my-skills,
 div.portfolio,
 div.contact {
 	background-color: rgb(252, 244, 251);
 	font-family: Raleway, sans-serif;
+}
+
+div.skill-reveal {
+	padding-top: 20px;
+	padding-bottom: 50px;
 }
 
 /* portfolio items */
