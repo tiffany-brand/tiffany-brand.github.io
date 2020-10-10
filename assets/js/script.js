@@ -29,5 +29,5 @@ sr.reveal('.portfolio-reveal', {
     duration: 2000,
     origin: 'bottom',
     distance: '50px',
-    viewFactor: 0.2
+    // viewFactor: 0.2
 })

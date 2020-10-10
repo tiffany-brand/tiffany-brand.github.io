@@ -4,8 +4,10 @@
 
 /* body background color and gradient */
 body {
-	background: rgb(238, 174, 202);
-	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(227, 191, 236, 1) 100%);
+	/* background: rgb(238, 174, 202);
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(227, 191, 236, 1) 100%); */
+	background: rgb(0,81,118);
+background: linear-gradient(90deg, rgba(0,81,118,1) 7%, rgba(172,215,235,1) 49%, rgba(0,81,118,1) 84%);
 }
 
 html {
@@ -18,8 +20,8 @@ html.sr .load-hidden {
 
 div.jumbotron {
 	margin-top: 100px;
-	height: 300px;
-	background-image: url('images/look-out.jpg');
+	height: 400px;
+	background-image: url('images/look-out-blue.jpg');
 	background-size: cover;
 	/* opacity: 0.8; */
 }
@@ -34,13 +36,13 @@ div.hero-text h1 {
 
 /* navbar */
 nav.navbg {
-	border-bottom: 2px solid rgb(151, 82, 151);
-	background-color: rgb(221, 160, 221);
+	border-bottom: 2px solid  rgb(0,81,118);
+	background-color:  rgb(172, 215, 235);
 }
 
 nav a.navbar-brand {
 	font-family: Poppins, sans-serif;
-	background-color: rgb(151, 82, 151);
+	background-color:  rgb(0,81,118);
 }
 
 
@@ -54,7 +56,7 @@ p.contact {
 a i,
 span i {
 	font-size: 4rem;
-	color: rgb(151, 82, 151);
+	color:  rgb(0,81,118);
 }
 
 a i:hover {
@@ -66,7 +68,7 @@ div.about-me,
 div.my-skills,
 div.portfolio,
 div.contact {
-	background-color: rgb(252, 244, 251);
+	background-color:rgb(220, 233, 240);
 	font-family: Raleway, sans-serif;
 }
 
@@ -80,14 +82,14 @@ div.skill-reveal {
 h5.card-title,
 span.portfolio-heading,
 h3 {
-	color: rgb(151, 82, 151);
+	color: rgb(0,81,118);
 	font-weight: bold;
 }
 
 
 /* footer */
 footer.footer {
-	background-color: rgb(221, 160, 221);
+	background-color:  rgb(172, 215, 235);
 }
 
 footer a.email {
